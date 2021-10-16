@@ -1,13 +1,7 @@
 package main
 
-import "fmt"
-
 func main() {
-	cards := newDeck()
+	d := newDeckFromFile("tt.txt")
 
-	cards.print()
-
-	fmt.Println(cards.toString())
-
-	cards.saveToFile("test.txt")
+	d.print()
 }
